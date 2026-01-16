@@ -7,39 +7,39 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image height={2015} width={3001} alt="Elegant furniture display" src={"https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg"} className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-linear-to-r from-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/60 to-transparent" />
       </div>
 
       {/* Content */}
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight text-balance">
-            Discover elegant & affordable furniture for good room
+            Crafting Timeless Woodwork for Your Modern Spaces
           </h1>
-          <p className="text-white/90 text-base md:text-lg mb-8 max-w-xl">
+          <p className="text-white/90 text-base md:text-lg mb-8 max-w-xl leading-relaxed">
             {
-              "Explore timeless furniture with exceptional craftsmanship. Combining current aesthetics with timeless beauty."
+              "We bring your vision to life with exceptional craftsmanship. Combining traditional techniques with modern aesthetics to create bespoke furniture that lasts a lifetime."
             }
           </p>
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8">
-            Buy Now
+          <Button size="lg" className="bg-white text-black hover:bg-white/90 font-semibold px-8 rounded-full">
+            View Our Work
           </Button>
         </div>
 
         {/* Stats Card */}
-        <div className="absolute bottom-8 right-8 bg-primary/95 backdrop-blur-sm rounded-2xl p-6 hidden lg:block">
-          <div className="flex gap-8">
+        <div className="absolute bottom-8 right-8 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-8 hidden lg:block">
+          <div className="flex gap-12">
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-1">875+</div>
-              <div className="text-white/80 text-sm">Product Uploaded</div>
+              <div className="text-3xl font-bold text-white mb-1">15+</div>
+              <div className="text-white/80 text-sm font-medium uppercase tracking-wide">Years Experience</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-1">400+</div>
-              <div className="text-white/80 text-sm">Product Hype</div>
+            <div className="text-center border-l border-white/20 pl-12">
+              <div className="text-3xl font-bold text-white mb-1">500+</div>
+              <div className="text-white/80 text-sm font-medium uppercase tracking-wide">Projects Completed</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-1">800+</div>
-              <div className="text-white/80 text-sm">Product Sold</div>
+            <div className="text-center border-l border-white/20 pl-12">
+              <div className="text-3xl font-bold text-white mb-1">100%</div>
+              <div className="text-white/80 text-sm font-medium uppercase tracking-wide">Client Satisfaction</div>
             </div>
           </div>
         </div>
