@@ -1,12 +1,14 @@
 export default function AboutSection() {
   return (
-    <section className="py-16 lg:py-24 bg-muted/20">
+    <section id="about" className="py-16 lg:py-24 bg-muted/20">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 relative z-10">Craftsmanship & Legacy</h2>
-             <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary/5 rounded-full z-0" />
-             <div className="h-1 w-20 bg-primary mb-6" />
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 relative z-10">
+              Craftsmanship & Legacy
+            </h2>
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary/5 rounded-full z-0" />
+            <div className="h-1 w-20 bg-primary mb-6" />
           </div>
           <div>
             <blockquote className="text-lg lg:text-xl text-muted-foreground leading-relaxed font-medium">
@@ -18,5 +20,5 @@ export default function AboutSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

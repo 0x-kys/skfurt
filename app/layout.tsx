@@ -1,16 +1,18 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Geist, Geist_Mono, JetBrains_Mono, Roboto } from "next/font/google"
-import "./globals.css"
+import type React from "react";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono, JetBrains_Mono, Roboto } from "next/font/google";
+import "./globals.css";
+import CustomCursor from "@/components/ui/animated-cursor";
 
-const roboto = Roboto({subsets:['latin'],variable:'--font-sans'});
+const roboto = Roboto({ subsets: ["latin"], variable: "--font-sans" });
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const _geist = Geist({ subsets: ["latin"] });
+const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "S.K. Wood Works",
-  description: "Discover elegant and affordable furniture for every room. Quality design meets timeless beauty.",
+  description:
+    "Discover elegant and affordable furniture for every room. Quality design meets timeless beauty.",
   icons: {
     icon: [
       {
@@ -28,18 +30,19 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" className={roboto.variable}>
       <body className={`font-sans antialiased`}>
+        <CustomCursor />
         {children}
       </body>
     </html>
-  )
+  );
 }
