@@ -20,7 +20,7 @@ export default function Footer() {
                 href="mailto:hello@skwoodworks.com"
                 className="block text-white/80 text-sm hover:text-white transition-colors"
               >
-                hello@skwoodworks.com
+                skwoodworks77@gmail.com
               </a>
               <a
                 href="tel:+918901114356"

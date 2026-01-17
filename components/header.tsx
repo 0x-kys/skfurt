@@ -20,25 +20,25 @@ export default function Header() {
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8 bg-black/20 backdrop-blur-sm px-8 py-3 rounded-full border border-white/10">
             <Link
-              href="#home"
+              href="/"
               className="text-white font-medium hover:text-white/80 transition-colors text-sm"
             >
               Home
             </Link>
             <Link
-              href="#about"
+              href="/#about"
               className="text-white font-medium hover:text-white/80 transition-colors text-sm"
             >
               About Us
             </Link>
             <Link
-              href="#showcase"
+              href="/#showcase"
               className="text-white font-medium hover:text-white/80 transition-colors text-sm"
             >
               Showcase
             </Link>
             <Link
-              href="#contact"
+              href="/#contact"
               className="text-white font-medium hover:text-white/80 transition-colors text-sm"
             >
               Contact Us

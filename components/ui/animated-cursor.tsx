@@ -8,6 +8,20 @@ const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
 });
 
 export default function CustomCursor() {
+  const [isDesktop, setIsDesktop] = React.useState(false);
+
+  React.useEffect(() => {
+    const checkDesktop = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+
+    checkDesktop();
+    window.addEventListener("resize", checkDesktop);
+    return () => window.removeEventListener("resize", checkDesktop);
+  }, []);
+
+  if (!isDesktop) return null;
+
   return (
     <AnimatedCursor
       color="255, 255, 255"
